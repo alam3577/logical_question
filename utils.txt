@@ -1,12 +1,66 @@
-npm i nodemon --save-dev
--------------------------
-            It will install nodemon for development version only.
+Installation types
+-------------------
 
-npm i nodemon --save
----------------------
-            It will install nodemon for development version too.
+        1.npm i nodemon --save-dev
+        -------------------------
+                 It will install nodemon for development version only.
 
-npm i nodemon -g --save
-------------------------
+        2.npm i nodemon --save
+        ---------------------
+                 It will install nodemon for development version too.
+
+        3.npm i nodemon -g --save
+        ------------------------
             It will install nodemon globally.
+            
+Error Types
+------------
+
+       1.Syntax Error
+       --------------
+                -> Simple syntax error which can be easily Identifed
+                
+       2.Runetime Error
+       ----------------
+                -> Read error message carefully to find solution.
+             
+       3.Logical Error
+       ---------------
+                -> So, difficult to find 
+                
+                Nodejs debugger play an importent role to find logical error 
+                ----------------------------------------------------------------
+                
+                -> Run -> Debugging -> select node (shortcut f5).
+                -> To use Debugger you need to add breakpoint. Is se hoga ye ki app breakpoint tak check kar paogay k appka code sahe se chala ya nahe.
+                -> Also please go in view and select debug option, So you can see local as well as global variable too. and many more.
+                
+                To restart the debugging process automatically as nodemon done for that we need to move to following path.
+                ------------------------------------------------------------------------------------------------------------
+                
+                -> Run -> Add Configuration -> select node 
+                -> add these in json.
+                          
+                          {
+                             "restart": true,
+                             "runtimeExecutable": "nodemon"
+                          }
+                
+                Important Points
+                ----------------
+                    1. Start Debugging from app.js
+                    2. It is main file 
+                    
+                    Syntax and runtime errors
+                    --------------------------
+                                at least throw a hopefully helpful error message and you should read these messages and look at the line numbers they give you                                     because that often helps you find out what went wrong and how to fix this. 
+                                
+                   Logical errors 
+                   ---------------
+                               often are more difficult to fix but you can fix them often with a lot of testing and possibly the help of the debugger which you                                  learned
+                               
+                   keep in mind how node code executes,
+                   -------------------------------------
+                               thatz it's not line after line but that it works with callbacks and is event driven and therefore if you want
+                               to look into a callback, you have to add the breakpoint there and not right before it.
             
