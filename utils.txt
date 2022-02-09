@@ -1,0 +1,12 @@
+npm i nodemon --save-dev
+-------------------------
+            It will install nodemon for development version only.
+
+npm i nodemon --save
+---------------------
+            It will install nodemon for development version too.
+
+npm i nodemon -g --save
+------------------------
+            It will install nodemon globally.
+            
