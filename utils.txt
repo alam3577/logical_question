@@ -63,4 +63,59 @@ Error Types
                    -------------------------------------
                                thatz it's not line after line but that it works with callbacks and is event driven and therefore if you want
                                to look into a callback, you have to add the breakpoint there and not right before it.
+                               
+                               
+                               
+Express
+-------
+               1.Middleware 
+               ------------
+                             -> comes between req and res
+                             -> you can write some condition between req and res if that condition satisfy then only you wull recive response.
+               2.Use()
+               ------
+                        Use allows us to add a new middleware function.it accepts an array of so-called request handlers here.
+                        
+                        Now one easy way of using it is that you simply pass a function here,                                                                                             this function you pass to app use will be executed for every incoming request.
+                        
+                        this function will receive three arguments,
+                        
+                        1.request
+                        2.response object.
+                        3.next()
+                        
+               3.next()
+               ---------
+                       Next is actually a function, a function that will be passed to this function by expressjs
+                       
+                       and this next argument, basically this function you're receiving here has to be executed to allow the
+                       request to travel on to the next middleware.
+                       
+                       So this allows the request to continue to the next middleware in, whoops middleware in line which is the middleware
+                       
+                       And you should call next if you want to allow the request to go to the next function,.
+                             
+                               
+                               
+                               
+               4. bodyParser alternative
+               --------------------------
+                                          
+                                          app.use(expess.json())
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
             
