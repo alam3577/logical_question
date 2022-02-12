@@ -41,41 +41,6 @@ let res = checkItIsTraingle(side1, side2, side3);
 console.log(res);
 
 ==============================================================================================================================================================
-// find max and min from array
 
-let arr = [13, 5];
-
-function findMinAndMax(arr) {
-  let smallestNum = arr[0];
-  let largestNum = arr[0];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < smallestNum) {
-      smallestNum = arr[i];
-    }
-    if (arr[i] > largestNum) {
-      largestNum = arr[i];
-    }
-  }
-  return { smallestNum, largestNum };
-}
-
-let res = findMinAndMax(arr);
-console.log(res);
-
-========================================================================================================================================================================
-                                                                         REVERSE A NUMBER
-let num = 789;
-
-function Reverse(num) {
-  let revNum = 0;
-  while (num != 0) {
-    let rem = parseInt(num % 10);
-    revNum = revNum * 10 + rem;
-    num = parseInt(num / 10);
-  }
-  return revNum;
-}
-
-let res = Reverse(num);
-console.log(res);
+                                                       
 */
