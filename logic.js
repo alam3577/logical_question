@@ -1,5 +1,5 @@
 /*
-// Fabonacci Series
+//                                                                           Fabonacci Series
 
 let num = 10;
 
@@ -23,7 +23,7 @@ console.log("the total number",res);
 
 =============================================================================================================================================================
 
-Check If it is triangle by three sides
+                                                         Check If it is triangle by three sides
 
 let side1 = 2;
 let side2 = 3;
@@ -40,8 +40,33 @@ let res = checkItIsTraingle(side1, side2, side3);
 
 console.log(res);
 
+=============================================================================================================================================================
+
+                                                                 ARMSTRONG NUMBER
+
+let arm = 153;
+
+function findArmStrong(num) {
+  let originalNum = num;
+  count = 0;
+  while (num !== 0) {
+    let rem = num % 10;
+    let val = Math.floor(rem);
+    count += val * val * val;
+    num = num / 10;
+  }
+  console.log(originalNum, count);
+  if (originalNum === count) {
+    return true;
+  }
+  return false;
+}
+
+let res = findArmStrong(arm);
+console.log(res);
+
+
 ==============================================================================================================================================================
-  DOUBLE QUOTES IN JAVASCRIPT
                                      
                                      (Escaping Literal Quotes in Strings)
                                      ------------------------------------
