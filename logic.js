@@ -41,6 +41,42 @@ let res = checkItIsTraingle(side1, side2, side3);
 console.log(res);
 
 ==============================================================================================================================================================
+  DOUBLE QUOTES IN JAVASCRIPT
+                                     
+                                     (Escaping Literal Quotes in Strings)
+                                     ------------------------------------
+     
+    const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+    console.log(sampleStr)
+    
+    output : Alan said, "Peter is learning JavaScript".
+    
+    
+                                   Quoting Strings with Single Quotes
+                                   ----------------------------------
+                                The above same thing can be done with single and double quotes
+                                
+                                
+                                Escape Sequences in Strings
+                                --------------------------
+                                
+                                Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+   
+   ==========================================================================================================================================================
+
+                                                Understand String Immutability
+                                                --------------------------------
+                                                
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
 
                                                        
 */
