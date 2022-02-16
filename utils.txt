@@ -1,3 +1,26 @@
+Auth
+====
+
+1.bcrypt.js (hash. compare)
+---------------------------
+                 A library to help you hash passwords.
+   hash(plain_password, 8)
+   ----------------------
+      It takes two arguments 
+           1) Plainpassword
+           
+           2) saltRounds
+              ----------
+                   number of rounds we want to perform.
+                   8 rounds perferred good.
+   
+          
+
+
+
+
+
+
 Installation types
 -------------------
 
