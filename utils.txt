@@ -15,8 +15,26 @@ Auth
                    8 rounds perferred good.
    
           
-
-
+  compare(comming_password, database_password)
+  
+  
+ JSON WEB TOKEN  (It is used to create token)
+ ----------------
+                 
+              jwt.sign()
+              ----------
+                      two arguments ({_id:id}, "helloiamsajjad")
+                      ------------------------------------------
+                               1) unique key and value pairs
+                               ------------------------------
+                                             {_id : "6cgjjabdjasbdysb"}
+                               
+                               2) SSH key( secret key)
+                               ------------------------
+                                             
+              
+              jwt.verify()
+              -------------
 
 
 
